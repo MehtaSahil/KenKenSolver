@@ -28,6 +28,11 @@ class Cage {
         containedSquares.add(square);
     }
 
+    // Returns false if there is a violation, true otherwise
+    public boolean isValid() {
+        return true;
+    }
+
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append("[");
