@@ -24,8 +24,8 @@ class Cage {
     }
 
     // ==================== Utilities ====================
-    public void addSquare(int row, int col) {
-        containedSquares.add(new Square(row, col));
+    public void addSquare(Square square) {
+        containedSquares.add(square);
     }
 
     public String toString() {

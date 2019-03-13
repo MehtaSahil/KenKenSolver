@@ -27,6 +27,10 @@ class Square {
         value = newValue;
     }
 
+    public void clearValue() {
+        value = 0;
+    }
+
     public int getValue() {
         return value;
     }
