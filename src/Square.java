@@ -31,6 +31,10 @@ class Square {
         value = 0;
     }
 
+    public boolean isEmpty() {
+        return value == 0;
+    }
+
     public int getValue() {
         return value;
     }
