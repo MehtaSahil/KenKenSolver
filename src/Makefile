@@ -2,7 +2,7 @@ JC = javac
 # JFLAGS =
 
 default:
-	$(JC) src/*.java
+	$(JC) *.java
 
 clean:
-	rm src/*.class
+	rm *.class
