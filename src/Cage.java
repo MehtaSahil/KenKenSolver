@@ -38,6 +38,23 @@ class Cage {
             }
         }
 
+        switch (operation) {
+            case ADD:
+                System.out.println("this cage is adding.");
+                break;
+            case SUB:
+                System.out.println("this cage is subtracting.");
+                break;
+            case MULT:
+                System.out.println("this cage is multiplying.");
+                break;
+            case DIV:
+                System.out.println("this cage is dividing.");
+                break;
+            default:
+                System.out.println("this cage has an unrecognized operation.");
+        }
+
         // Addition and multiplication are commutative
         if (operation == Operation.ADD) {
 
