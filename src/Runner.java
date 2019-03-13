@@ -3,8 +3,6 @@ import java.util.ArrayList;
 
 class main {
     public static void main(String args[]) {
-        System.out.println("Hello, world!");
-
         int[][][] testPuzzle = {
             {{0, 0}, {0, 1}},
             {{0, 2}, {0, 3}},
@@ -13,7 +11,7 @@ class main {
             {{1, 3}},
             {{2, 0}, {2, 1}, {3, 1}},
             {{2, 3}, {3, 3}},
-            {{0, 0}}
+            {{3, 3}}
         };
 
         List<Integer> testTargets = new ArrayList<Integer>();
@@ -37,5 +35,7 @@ class main {
         testOps.add(null);
 
         Puzzle p = new Puzzle(4, testPuzzle, testTargets, testOps);
+
+        System.out.println("Finished initializing puzzle.");
     }
 }

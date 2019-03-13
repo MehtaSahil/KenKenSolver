@@ -20,10 +20,23 @@ class Puzzle {
     ) {
         this.dimension = dimension;
         cageMap = new Cage[dimension][dimension];
-    }
 
-    private void initializeCageMap(int[][][] cageSquareLocations) {
-        
+        // Initialize cageMap
+        // All given cages
+        for (int cage = 0; cage < cageSquareLocations.length; cage++) {
+
+            // Create new cage
+            Cage newCage = new Cage(cageTargets.get(cage), cageOperations.get(cage));
+
+            // All squares for this particular cage
+            for (int sq = 0; sq < cageSquareLocations[cage].length; sq++) {
+                int row = cageSquareLocations[cage][sq][0];
+                int col = cageSquareLocations[cage][sq][1];
+
+                newCage.addSquare(row, col);
+                cageMap[row][col] = newCage;
+            }
+        }
     }
 
     // ==================== Utilities ====================

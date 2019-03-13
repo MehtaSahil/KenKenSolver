@@ -27,4 +27,15 @@ class Cage {
     public void addSquare(int row, int col) {
         containedSquares.add(new Square(row, col));
     }
+
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append("[");
+        s.append(target);
+        s.append(":");
+        s.append(op);
+        s.append("]");
+
+        return s.toString();
+    }
 }
